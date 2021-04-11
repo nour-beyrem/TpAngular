@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-new',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewComponent implements OnInit {
 
+  @Input() defaultColor = 'red';
+  color = this.defaultColor;
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  changeColor1(newColor: string) {
+    this.color = newColor;
+  }
+  receivecolor(message: string){
+    alert(message);
+  }
 }
