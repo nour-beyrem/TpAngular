@@ -1,3 +1,4 @@
+import { LoggerService } from './services/logger.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -24,6 +25,12 @@ import { MiniWordComponent } from './directives/mini-word/mini-word.component';
 import { NgClassComponent } from './directives/ng-class/ng-class.component';
 import { HighlightDirective } from './directives/highlight.directive';
 import { RainbowDirective } from './directives/rainbow.directive';
+import { TestngifComponent } from './directives/testngif/testngif.component';
+import { TestngforComponent } from './directives/testngfor/testngfor.component';
+import { RandomAgePipe } from './pipes/random-age.pipe';
+import { DefaultImagePipe } from './cv/pipes/default-image.pipe';
+import { TodoComponent } from './todo/todo/todo.component';
+
 
 @NgModule({
   declarations: [
@@ -47,7 +54,13 @@ import { RainbowDirective } from './directives/rainbow.directive';
     MiniWordComponent,
     NgClassComponent,
     HighlightDirective,
-    RainbowDirective
+    RainbowDirective,
+    TestngifComponent,
+    TestngforComponent,
+    RandomAgePipe,
+    DefaultImagePipe,
+    TodoComponent,
+
   ],
   imports: [
     BrowserModule,
