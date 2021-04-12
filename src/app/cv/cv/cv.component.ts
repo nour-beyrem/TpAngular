@@ -10,7 +10,7 @@ import { Cv } from '../model/cv';
   styleUrls: ['./cv.component.css']
 })
 export class CvComponent implements OnInit {
-  selectedCv: Cv = new Cv();
+  selectedCv = null;
   date = new Date();
   constructor(private loggerService: LoggerService,
 
@@ -21,7 +21,7 @@ export class CvComponent implements OnInit {
     this.helperService.whoAmI();
     this.loggerService.logger('cc je suis le cvComponent');
   }
-  findSelectedCv(selectedCv: Cv) {
+  findSelectedCv(selectedCv: any) {
     this.selectedCv = selectedCv;
     this.TodoService.logger();
 

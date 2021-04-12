@@ -7,7 +7,7 @@ import { Cv } from '../model/cv';
   styleUrls: ['./item.component.css']
 })
 export class ItemComponent implements OnInit {
-  @Input() cv: Cv = new Cv();
+  @Input() cv: any =null;
   @Input() size = 50;
   @Input() isDiv = true;
   @Output() selectPersonne = new EventEmitter();
