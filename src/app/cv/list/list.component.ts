@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Cv } from '../model/cv';
+import { CvService } from '../services/cv.service';
 
 @Component({
   selector: 'app-list',
@@ -9,9 +10,10 @@ import { Cv } from '../model/cv';
 export class ListComponent implements OnInit {
   cvs: Cv[] = [];
   @Output() forwardSelectedCv = new EventEmitter();
-  constructor() { }
+  constructor(private cvService: CvService) { }
 
   ngOnInit(): void {
+    this.cvs = this.cvService.getCvs();
   }
   forwardCv(selectedCv: Cv) {
     this.forwardSelectedCv.emit(selectedCv);

@@ -1,7 +1,7 @@
 import { LoggerService } from './services/logger.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
@@ -30,6 +30,8 @@ import { TestngforComponent } from './directives/testngfor/testngfor.component';
 import { RandomAgePipe } from './pipes/random-age.pipe';
 import { DefaultImagePipe } from './cv/pipes/default-image.pipe';
 import { TodoComponent } from './todo/todo/todo.component';
+import { ToastrModule } from 'ngx-toastr';
+import { EmbaucheComponent } from './cv/embauche/embauche.component';
 
 
 @NgModule({
@@ -60,12 +62,15 @@ import { TodoComponent } from './todo/todo/todo.component';
     RandomAgePipe,
     DefaultImagePipe,
     TodoComponent,
+    EmbaucheComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
