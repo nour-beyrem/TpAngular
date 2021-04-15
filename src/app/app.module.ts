@@ -32,6 +32,10 @@ import { DefaultImagePipe } from './cv/pipes/default-image.pipe';
 import { TodoComponent } from './todo/todo/todo.component';
 import { ToastrModule } from 'ngx-toastr';
 import { EmbaucheComponent } from './cv/embauche/embauche.component';
+import { HeaderComponent } from './components/header/header.component';
+import { LoginComponent } from './pages/login/login.component';
+import { ChiffreCacheComponent } from './components/chiffre-cache/chiffre-cache.component';
+import { DetailsCvComponent } from './cv/details-cv/details-cv.component';
 
 
 @NgModule({
@@ -63,6 +67,10 @@ import { EmbaucheComponent } from './cv/embauche/embauche.component';
     DefaultImagePipe,
     TodoComponent,
     EmbaucheComponent,
+    HeaderComponent,
+    LoginComponent,
+    ChiffreCacheComponent,
+    DetailsCvComponent,
 
   ],
   imports: [

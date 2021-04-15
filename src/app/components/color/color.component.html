@@ -13,6 +13,10 @@
     [(ngModel)]="color"
   type="color" class="form-control">
 
-
+  <button
+  (click)="changeColor(defaultColor)"
+  class="btn btn-primary">
+  reset color
+</button>
 
 <app-colorfils (sendColorToDad)="recieveDataFromSon($event)"></app-colorfils>
