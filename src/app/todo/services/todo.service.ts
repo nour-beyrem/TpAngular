@@ -15,11 +15,13 @@ export class TodoService {
     this.todos.push(todo);
   }
 
+
   getTodos(): Todo[] {
     return this.todos;
   }
   deleteTodo(todo: any): void {
     const index = this.todos.indexOf(todo);
     this.todos.splice(index, 1);
+
   }
 }

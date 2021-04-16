@@ -1,3 +1,4 @@
+import { DetailsCvComponent } from './cv/details-cv/details-cv.component';
 import { FirstComponent } from './first/first.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -12,7 +13,8 @@ const routes: Routes = [ { path: '', component: FirstComponent },
 { path: 'todo', component: TodoComponent },
 { path: 'color/:couleur', component: ColorComponent },
 { path: 'word', component: MiniWordComponent },
-{ path: 'cache', component: ChiffreCacheComponent },];
+{ path: 'cache', component: ChiffreCacheComponent },
+{ path: 'detail/:id', component: DetailsCvComponent },];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
