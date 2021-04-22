@@ -36,6 +36,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ChiffreCacheComponent } from './components/chiffre-cache/chiffre-cache.component';
 import { DetailsCvComponent } from './cv/details-cv/details-cv.component';
+import { TestFormComponent } from './components/test-form/test-form.component';
+import { FormComponent } from './form/form.component';
 
 
 @NgModule({
@@ -71,6 +73,8 @@ import { DetailsCvComponent } from './cv/details-cv/details-cv.component';
     LoginComponent,
     ChiffreCacheComponent,
     DetailsCvComponent,
+    TestFormComponent,
+    FormComponent,
 
   ],
   imports: [
